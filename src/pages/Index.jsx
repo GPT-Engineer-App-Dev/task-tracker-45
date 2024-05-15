@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, VStack, HStack, Input, Button, Text, Checkbox, IconButton } from "@chakra-ui/react";
+import { Container, VStack, HStack, Input, Button, Text, Checkbox, IconButton, Heading } from "@chakra-ui/react";
 import { FaTrash } from "react-icons/fa";
 
 const Index = () => {
@@ -28,6 +28,7 @@ const Index = () => {
   return (
     <Container centerContent maxW="container.md" py={10}>
       <VStack spacing={4} width="100%">
+        <Heading as="h1" size="xl" mb={6}>Todo App</Heading>
         <HStack width="100%">
           <Input 
             placeholder="Add a new task" 
